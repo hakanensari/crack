@@ -1,0 +1,43 @@
+{
+   "name": "crack",
+   "description": "Really simple XML parsing",
+   "version": "0.0.1",
+   "homepage": "http://github.com/hakanensari/crack",
+   "author": "Hakan Ensari <hakan.ensari@papercavalier.com>",
+   "main": "./lib/crack",
+   "directories": {
+     "lib": "./lib/crack"
+   },
+   "bugs": {
+     "url": "http://github.com/hakanensari/crack/issues"
+   },
+   "repository": {
+     "type": "git",
+     "url": "git://github.com/hakanensari/crack.git"
+   },
+   "dependencies": {
+     "libxmljs": "*"
+   },
+   "devDependencies": {
+     "coffee-script": "*",
+     "docco": "*",
+     "mocha": "*",
+     "should": "*"
+   },
+   "scripts": {
+     "test": "node_modules/mocha/bin/mocha test/**/*.coffee"
+   },
+   "engines": {
+     "node": ">= 0.4.0"
+   },
+   "licenses": [
+     {
+       "type": "MIT",
+       "url": "https://raw.github.com/hakanensari/crack/master/LICENSE"
+     }
+   ],
+   "tags": [
+     "XML",
+     "LibXML"
+   ]
+}
