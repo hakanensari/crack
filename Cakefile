@@ -13,7 +13,7 @@ task 'document', 'generate docs', ->
 
 task 'release', 'Release project to npm', ->
   invoke 'build'
-  process.nexttick ->
+  process.nextTick ->
     run 'npm publish'
 
 task 'test', 'Run specs', ->
