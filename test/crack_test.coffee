@@ -1,4 +1,4 @@
-crack  = require '../../src/crack'
+crack  = require '../src/crack'
 
 shouldBeOnCrack = ->
   describe '#toJS', ->
@@ -72,3 +72,7 @@ describe 'Document', ->
       @doc = crack data
 
     shouldBeOnCrack()
+
+  describe 'given a string that is not an XML document', ->
+    it 'throws an error', ->
+      (-> crack 'foo').should.throw

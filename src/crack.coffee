@@ -54,5 +54,6 @@ class Document
           obj[key] = val
 
     obj
- 
-module.exports = Document
+
+module.exports = (data) ->
+  new Document data
