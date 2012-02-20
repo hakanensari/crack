@@ -12,9 +12,7 @@ task 'document', 'generate docs', ->
   run 'docco src/**/*.coffee'
 
 task 'release', 'Release project to npm', ->
-  invoke 'build'
-  process.nextTick ->
-    run 'npm publish'
+  run 'npm publish'
 
 task 'test', 'Run specs', ->
-  run 'npm test'
+  run 'node_modules/mocha/bin/mocha -R spec test/*.coffee'

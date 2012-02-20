@@ -2,14 +2,14 @@
    "name": "crack",
    "description": "Really simple XML parsing",
    "version": "0.0.1",
-   "homepage": "http://github.com/hakanensari/crack",
+   "homepage": "https://github.com/hakanensari/crack",
    "author": "Hakan Ensari <hakan.ensari@papercavalier.com>",
    "main": "./lib/crack",
    "directories": {
      "lib": "./lib/crack"
    },
    "bugs": {
-     "url": "http://github.com/hakanensari/crack/issues"
+     "url": "https://github.com/hakanensari/crack/issues"
    },
    "repository": {
      "type": "git",
@@ -25,7 +25,7 @@
      "should": "*"
    },
    "scripts": {
-     "test": "node_modules/mocha/bin/mocha test/**/*.coffee"
+     "test": "node_modules/mocha/bin/mocha test/*.coffee"
    },
    "engines": {
      "node": ">= 0.4.0"
