@@ -12,7 +12,7 @@ shouldBeOnCrack = ->
 
     it 'returns nested nodes with no siblings', ->
       item = @doc.find('Item')[0]
-      item['ASIN'].should.be.a 'string'
+      item['ASIN'].should.be.a.String
 
     it 'parses nodes with siblings', ->
       item = @doc.find('Item')[0]
@@ -21,8 +21,8 @@ shouldBeOnCrack = ->
     it 'parses nodes with attributes', ->
       item = @doc.find('Item')[0]
       creator = item['ItemAttributes']['Creator'][0]
-      creator['Role'].should.be.a 'string'
-      creator['__content'].should.be.a 'string'
+      creator['Role'].should.be.a.String
+      creator['__content'].should.be.a.String
 
     describe 'when no matches are found', ->
       it 'returns an empty array', ->
